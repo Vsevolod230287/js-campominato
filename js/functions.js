@@ -14,3 +14,17 @@ function isOdd(numero) {
     return false;
   }
 }
+
+
+function createBombs(array, max) {
+  while(array.length < 16) {
+    var numero = randomNumberInRange(1, max)
+
+    if(!array.includes(numero)){
+      array.push(numero);
+    }
+  }
+
+  return array;
+
+}
